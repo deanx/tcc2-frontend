@@ -254,8 +254,6 @@ Todas as informações coletadas durante a sua participação serão analis
               <option value="sim">Sim</option>
               <option value="nao">Não</option>
               <option value="sim-mas-retornamos">Sim, mas já retornamos a amizade</option>
-              <option value="sudeste">Sudeste</option>
-              <option value="sul">Sul</option>
             </Select></Box>
           </HStack>  
           <HStack w="100%">
