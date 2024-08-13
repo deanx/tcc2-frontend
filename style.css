@@ -349,7 +349,7 @@ main .container {
 }
 
 .message {
-  font-weight: 400;
+  font-weight: bold;
   margin-top: 5px;
   font-size: 14px;
   color: #777;
