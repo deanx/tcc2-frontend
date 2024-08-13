@@ -124,9 +124,9 @@ function App(props) {
                                 </div>
                             </div>
                         </div>
-                        <h3>Ayush Agarwal
+                        <h3>Política News
                               <br/>
-                              <span>Mumbai, India</span>
+                              <span>Brasília, Brasil</span>
                       </h3>
                     </div>
                     <div>
@@ -237,7 +237,7 @@ function App(props) {
                         </div>
                     </div>
                     <a href="#">
-                        <p className="likes">203 likes</p>
+                        <p className="likes">504 likes</p>
 
                     </a>
                     <a href="#">
@@ -248,7 +248,7 @@ function App(props) {
                     </a>
                     <a href="#">
                         <h4 className="comments">
-                          <p className="comment-title">Comments</p>
+                          <p className="comment-title">Comentários</p>
                           <section className="comment-box">
                               <div className="profilepic">
                                   <div className="profile_img">
@@ -319,12 +319,12 @@ function App(props) {
                         </div>
                         <input type="text"
                                className="text"
-                               placeholder="Add a comment..."
+                               placeholder="Adicione seu comentário..."
                                id="comment"
                                value={comment}
                                onChange={(event) => setComment(event.target.value)}
                                 />
-                        <a href="#" onClick={() => props.savePost(1, like, save, share, comment, window.email, 3)}>Post</a>
+                        <a href="#" onClick={() => props.savePost(1, like, save, share, comment, window.email, 3)}>Enviar</a>
                     </div>
                 </div>
             </div>
@@ -343,7 +343,7 @@ function App(props) {
                                     </div>
                                 </div>
                             </div>
-                            <h3>Aditya Verma<br/>
+                            <h3>Lucas_DeusPatriaFamilia<br/>
                               <span>Follows You</span>
                             </h3>
                         </div>
@@ -364,7 +364,7 @@ function App(props) {
                                     </div>
                                 </div>
                             </div>
-                            <h3>Amit Singh<br/>
+                            <h3>Luiza_Petista<br/>
                               <span>Follows You</span>
                            </h3>
                         </div>
@@ -385,7 +385,7 @@ function App(props) {
                                     </div>
                                 </div>
                             </div>
-                            <h3>Piyush Agarwal<br/>
+                            <h3>Marta_AntiFascista<br/>
                                 <span>Followed by Keshav Agarwal</span>
                             </h3>
                         </div>
@@ -405,7 +405,7 @@ function App(props) {
                                     </div>
                                 </div>
                             </div>
-                            <h3>Amit Sharma<br/>
+                            <h3>Andre_Capitao<br/>
                               <span>Follows You</span>
                             </h3>
                         </div>
@@ -427,7 +427,7 @@ function App(props) {
                                     </div>
                                 </div>
                             </div>
-                            <h3>Raj Goel<br/>
+                            <h3>Pedro_Mito<br/>
                                 <span>Followed by Keshav Agarwal</span>
                             </h3>
                         </div>
