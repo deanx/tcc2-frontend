@@ -128,9 +128,9 @@ Todas as informações coletadas durante a sua participação serão analis
             <Box w={"50%"}>Data de nascimento:</Box>
             <Box w={"50%"}><input type="date" value={datanascto} onChange={(event) => setDataNascto(event.target.value)}/></Box>
           </HStack>
-          <HStack w="100%">
+          <HStack w="100%" bg='teal.300' color='#666'>
             <Box w={"50%"}>Qual é o seu gênero?</Box>
-            <Box><Select value={genero} onChange={(event) => setGenero(event.target.options[event.target.selectedIndex].value)}>
+            <Box ><Select value={genero} onChange={(event) => setGenero(event.target.options[event.target.selectedIndex].value)}>
               <option>selecione</option>
               <option value="masculino">Masculino</option>
               <option value="feminino">Feminino</option>
@@ -149,7 +149,7 @@ Todas as informações coletadas durante a sua participação serão analis
               <option value="doutorado">Doutorado</option>
             </Select></Box>
           </HStack>
-          <HStack w="100%">
+          <HStack w="100%" bg='teal.300' color='#666'>
             <Box w={"50%"}>Qual é a sua renda familiar mensal?</Box>
             <Box><Select value={rendaFamiliar} onChange={(event) => setRendaFamiliar(event.target.options[event.target.selectedIndex].value)}>
               <option>selecione</option>
@@ -170,7 +170,7 @@ Todas as informações coletadas durante a sua participação serão analis
               <option value="sul">Sul</option>
             </Select></Box>
           </HStack>
-          <HStack w="100%">
+          <HStack w="100%" bg='teal.300' color='#666'>
             <Box w={"50%"}>Quais das opções abaixo melhor descreve sua orientação política?</Box>
             <Box><Select value={orientacaoPolitica} onChange={(event) => setOrientacaoPolitica(event.target.options[event.target.selectedIndex].value)}>
               <option>selecione</option>
@@ -190,7 +190,7 @@ Todas as informações coletadas durante a sua participação serão analis
               <option value="nunca">Nunca</option>
             </Select></Box>
           </HStack>
-          <HStack w="100%">
+          <HStack w="100%" bg='teal.300' color='#666'>
             <Box w={"50%"}>Quais são suas principais fontes de informação sobre política?</Box>
             <Box><Select value={principaisFontesInformacao} onChange={(event) => setPrincipaisFontesInformacao(event.target.options[event.target.selectedIndex].value)}>
               <option>selecione</option>
@@ -211,7 +211,7 @@ Todas as informações coletadas durante a sua participação serão analis
               <option value="whatsapp">Whatsapp</option>
             </Select></Box>
           </HStack> 
-          <HStack w="100%">
+          <HStack w="100%" bg='teal.300' color='#666'>
             <Box w={"50%"}>Você costuma buscar informações ou ler e acompanhar notícias que apresentam opiniões políticas diferentes das suas?</Box>
             <Box><Select value={costumaBuscarInformacoes} onChange={(event) => setCostumaBuscarInformacoes(event.target.options[event.target.selectedIndex].value)}>
               <option>selecione</option>
@@ -229,7 +229,7 @@ Todas as informações coletadas durante a sua participação serão analis
               <option value="ouco-para-entender">Ouço para entender o que ele tem a dizer</option>
             </Select></Box>
           </HStack> 
-          <HStack w="100%">
+          <HStack w="100%" bg='teal.300' color='#666'>
             <Box w={"50%"}>Você teve pessoas próximas a você que se desentenderam devido a posicionamentos políticos?</Box>
             <Box><Select value={pessoasProximasDesentenderam} onChange={(event) => setPessoasProximasDesentenderam(event.target.options[event.target.selectedIndex].value)}>
               <option>selecione</option>
@@ -247,7 +247,7 @@ Todas as informações coletadas durante a sua participação serão analis
               <option value="nao">Não</option>
             </Select></Box>
           </HStack>  
-          <HStack w="100%">
+          <HStack w="100%" bg='teal.300' color='#666'>
             <Box w={"50%"}>Você precisou cortar contato com pessoas devido a posicionamentos políticos?</Box>
             <Box><Select value={precisouCortarContato} onChange={(event) => setPrecisouCortarContato(event.target.options[event.target.selectedIndex].value)}>
               <option>selecione</option>
