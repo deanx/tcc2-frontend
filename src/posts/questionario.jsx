@@ -40,6 +40,7 @@ function App(props) {
         setTimeout(()=> props.takepicture(email + "-aceite.png"), 3000)
         localStorage.setItem("step", 1);
         localStorage.setItem("email", email);
+        document.getElementById("container-camera").style.display="block"
     }
   }
 
@@ -64,7 +65,7 @@ function App(props) {
       } else {
         let data = JSON.stringify({
           "id": 1,
-          "email": email,
+          "email": email || localStorage.getItem("email"),
           "datanascto": datanascto,
           "genero": genero,
           "escolaridade": escolaridade,
