@@ -192,7 +192,7 @@ function App() {
   }
 
   function startVideoReloaded() {
-    if(!window.email) {
+    if(!window.email && localStorage.getItem("email")) {
       setTimeout(()=>{
         if(document.getElementById("video")) startup()
           else {
@@ -214,7 +214,7 @@ function App() {
       >
         <div className="camera" style={{"display":"block", "position":"absolute","zIndex": "900000"}} id="container-camera">
         <div>
-          <video id="video">Video stream not available.</video>
+          <video id="video" playsInline="true">Video stream not available.</video>
         </div>
         </div>
       </Draggable>
