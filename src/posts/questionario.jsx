@@ -114,7 +114,9 @@ function App(props) {
                 <CardBody>
                     <Text pt='2' fontSize='sm'>
 Você está convidado (a) a participar de uma pesquisa academica sobre polarização política, que faz parte de um projeto de finalizacão de curso de Pós graduação em Neurociencia pela PUC Rio Grande do Sul, em que se inclue o uso de analise neurocientifica que faz aferiçoes durante a pesquisa, portanto é necessário que <strong>habilite sua camera quando solicitado.</strong> 
-<br/><strong>Importante:</strong><br/>
+<br/><br/>
+O teste será composto por <strong>um questionário</strong> sobre você e <strong>sete posts que simulam o Instagram</strong>. Nessas telas você pode curtir, compartilhar e deverá deixar um comentário com sua opinião sobre aquele post.
+<br/><br/><strong>Importante:</strong><br/>
 Todas as informações coletadas durante a sua participação serão analisadas em conjunto com as informações dos outros voluntários. Caso você aceite participar da pesquisa e assine este termo, você estará ciente que todos os seus dados pessoais e aferiçoes coletadas pela camera serão processados de acordo com a Lei 13.709/18 (LGPD), e serão utilizados apenas para os propósitos desta pesquisa e não serão compartilhados.
                     </Text>
                 </CardBody>
