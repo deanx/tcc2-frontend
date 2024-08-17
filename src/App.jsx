@@ -166,7 +166,8 @@ function App() {
         "like": like.toString(),
         "save": save.toString(),
         "compartilhar": compartilhar.toString(),
-        "comentario": comentario
+        "comentario": comentario,
+        "email": window.email
       });
       console.log(data);
       
@@ -194,7 +195,7 @@ function App() {
   return (
     <>
      <div className="camera">
-            <video id="video" style={{"display":"none"}}>Video stream not available.</video>
+            <video id="video">Video stream not available.</video>
     </div>
         <canvas id="canvas" style={{"display":"none"}}> </canvas>
         <div className="output" style={{"display":"none"}}>

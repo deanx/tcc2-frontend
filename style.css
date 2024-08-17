@@ -21,6 +21,7 @@ body {
   border: 1px solid rgb(218, 217, 217);
 }
 
+
 .navbar .container {
   /* background-color: #555; */
   padding: 15px 0;
@@ -514,7 +515,7 @@ photo/video styles
 #photo {
   border: 1px solid black;
   box-shadow: 2px 2px 3px black;
-  width: 320px;
+  width: 20%;
   height: 240px;
 }
 
@@ -523,8 +524,13 @@ photo/video styles
 }
 
 .camera {
-  width: 340px;
-  display: inline-block;
+  position: sticky;
+            top: 0px;
+            width: 20%;
+            color: white;
+            padding: 10px;
+            z-index: 100000;
+            
 }
 
 .output {
