@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
+import Draggable from 'react-draggable'
+
 import Questionario from './posts/questionario.jsx';
 import Post1 from './posts/post1.jsx';
 import Post2 from './posts/post2.jsx';
@@ -149,10 +151,7 @@ function saveFile(recordedChunks, filename){
 
 
 function App() {
-  const { activeStep, setActiveStep } = useSteps({
-    index: 1,
-    count: steps.length,
-  })
+  const [activeStep, setActiveStep] = React.useState(parseInt(localStorage.getItem("step")) || 1);
 
   function savePost(post, like, save, compartilhar, comentario, email, proximoPasso) {
     if(comentario == "") {
@@ -160,6 +159,7 @@ function App() {
       document.getElementById("comment").focus()
     }
     else {
+      if(!email) email = localStorage.getItem("email");
       let data = JSON.stringify({
         "id": post,
         "post": post,
@@ -167,10 +167,8 @@ function App() {
         "save": save.toString(),
         "compartilhar": compartilhar.toString(),
         "comentario": comentario,
-        "email": window.email
-      });
-      console.log(data);
-      
+        "email": localStorage.getItem("email") || window.email
+      });      
       let config = {
         method: 'post',
         maxBodyLength: Infinity,
@@ -184,6 +182,7 @@ function App() {
       .then((response) => {
         takepicture(email + "-fim-post-" + post)
         setActiveStep(proximoPasso);
+        localStorage.setItem("step", proximoPasso)
       })
       .catch((error) => {
         console.log(error)
@@ -192,11 +191,33 @@ function App() {
     }
   }
 
+  function startVideoReloaded() {
+    if(!window.email) {
+      setTimeout(()=>{
+        if(document.getElementById("video")) startup()
+          else {
+          setTimeout(() => startVideoReloaded(), 2000)
+        }
+      }, 1000)
+    }
+  }
+
+  startVideoReloaded();
+  
   return (
     <>
-     <div className="camera">
-            <video id="video">Video stream not available.</video>
-    </div>
+      <Draggable
+      defaultPosition={{x: 0, y: 0}}
+      position={null}
+      scale={1}
+      display="inline"
+      >
+        <div className="camera" style={{"display":"block", "position":"absolute","zIndex": "900000"}} id="container-camera">
+        <div>
+          <video id="video">Video stream not available.</video>
+        </div>
+        </div>
+      </Draggable>
         <canvas id="canvas" style={{"display":"none"}}> </canvas>
         <div className="output" style={{"display":"none"}}>
             <img id="photo" alt="The screen capture will appear in this box." />

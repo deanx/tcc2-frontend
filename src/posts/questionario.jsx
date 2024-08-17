@@ -38,6 +38,8 @@ function App(props) {
         setShowTermoConsentimento(false); 
         props.startup(); 
         setTimeout(()=> props.takepicture(email + "-aceite.png"), 3000)
+        localStorage.setItem("step", 1);
+        localStorage.setItem("email", email);
     }
   }
 
@@ -91,9 +93,10 @@ function App(props) {
         };
         axios.request(config)
         .then((response) => {
-          window.email=email;
+          window.email = email;
           props.takepicture(email + "-fim-questionario.png")
           props.setActiveStep(2);
+          localStorage.setItem("step", 2);
         })
         .catch((error) => {
           alert("Erro! Revise os dados e tente novamente!")
@@ -103,7 +106,7 @@ function App(props) {
     return (
       <>
       <ChakraProvider>
-      {showTermoConsentimento  && <Card>
+      {!localStorage.getItem("email") && <Card>
                 <CardHeader>
                     <Heading size='sm'>TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO</Heading>
                 </CardHeader>
@@ -121,7 +124,7 @@ Todas as informações coletadas durante a sua participação serão analis
                     </Heading>
                 </CardFooter>
             </Card>}
-            {!showTermoConsentimento  && 
+            {localStorage.getItem("email")  && 
       <div width="100%">
         <VStack>
           <HStack w="100%">
