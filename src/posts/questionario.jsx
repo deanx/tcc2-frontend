@@ -123,7 +123,7 @@ Todas as informações coletadas durante a sua participação serão analis
                 <CardFooter >
                     <Heading size='xs'>
                         E-mail: <Input id="email" type="email" value={email} onChange={(event) => setEmail(event.target.value)}></Input>
-                        <Box cursor={'pointer'}><Checkbox value={showTermoConsentimento} isChecked={!showTermoConsentimento} onChange={() => aceiteConsentimento()}></Checkbox> Sim, aceito participar.</Box>
+                        <Box><Checkbox cursor={'pointer'} value={showTermoConsentimento} isChecked={!showTermoConsentimento} onChange={() => aceiteConsentimento()}></Checkbox> Sim, aceito participar.</Box>
                     </Heading>
                 </CardFooter>
             </Card>}
@@ -166,7 +166,7 @@ Todas as informações coletadas durante a sua participação serão analis
             </Select></Box>
           </HStack>
           <HStack w="100%">
-            <Box w={"50%"}>Em qual região do Brasil você mora?</Box>
+            <Box w={"50%"}>A qual região do Brasil você pertence?</Box>
             <Box><Select value={regiaoBrasil} onChange={(event) => setRegiaoBrasil(event.target.options[event.target.selectedIndex].value)}>
               <option>selecione</option>
               <option value="centro-oeste">Centro-oeste</option>
