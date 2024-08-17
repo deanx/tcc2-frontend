@@ -212,7 +212,7 @@ function App() {
       scale={1}
       display="inline"
       >
-        <div className="camera" style={{"display":localStorage.getItem("email")?"blocl": "none", "position":"sticky","zIndex": "900000"}} id="container-camera">
+        <div className="camera" style={{"display":localStorage.getItem("email")?"blocl": "none"}} id="container-camera">
         <div>
           <video id="video" playsInline={true}>Video stream not available.</video>
         </div>
