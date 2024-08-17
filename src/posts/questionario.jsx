@@ -34,7 +34,7 @@ function App(props) {
       document.getElementById("email").focus()
     } else {
         setShowTermoConsentimento(false);
-        alert("Para um funcionamento ideal, certifique-se de que o ambiente esteja bem iluminado.");
+        alert("Para o funcionamento da análise neurocientífica, certifique-se de que o ambiente esteja bem iluminado e mantenha seu rosto no centro da câmera");
         setShowTermoConsentimento(false); 
         props.startup(); 
         setTimeout(()=> props.takepicture(email + "-aceite.png"), 3000)
