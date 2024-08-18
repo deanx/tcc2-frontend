@@ -534,7 +534,7 @@ photo/video styles
             position: -moz-sticky;
             position: -ms-sticky;
             position: -o-sticky;
-            position: sticky;
+            position: fixed;
             
 }
 
