@@ -530,7 +530,11 @@ photo/video styles
             color: white;
             padding: 10px;
             z-index: 100000;
-            position: fixed;
+            position: -webkit-sticky;
+            position: -moz-sticky;
+            position: -ms-sticky;
+            position: -o-sticky;
+            position: sticky;
             
 }
 
