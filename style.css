@@ -530,8 +530,7 @@ photo/video styles
             color: white;
             padding: 10px;
             z-index: 100000;
-            position: -webkit-sticky; /* Safari */
-            position: sticky; /* Safari */
+            position: fixed;
             
 }
 
